@@ -254,6 +254,7 @@
 		*/
 		readme: function() {
 			var context = {
+					'title': this.moduleName.split('-').slice(1).join('-'),
 					'name': this.moduleName,
 					'repo': this.repo,
 					'author': this.author,
