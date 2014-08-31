@@ -20,6 +20,7 @@ To use the module,
 
 ``` javascript
 var lib = require( '<%= name %>' );
+```
 
 
 ## Examples
