@@ -62,6 +62,11 @@ The initialization process stops short of pushing the commit to the remote repos
 Note: Git initialization assumes you have write access to the [Validate-io](https://github.com/validate-io) organization on Github. If you are not already a member and are interested in contributing, contact one of the [owners](https://github.com/kgryte).
 
 
+#### Repository
+
+If you elected to initialize a local Git repository, you must specify the corresponding remote repository name. The default is the unique module id (e.g., `validate.io-object` --> `object` ).
+
+
 #### Author
 
 Enter the primary author's name; i.e., in all likelihood that will be your name.
