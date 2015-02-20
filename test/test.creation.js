@@ -1,4 +1,5 @@
-
+/* global require, describe, it, beforeEach */
+'use strict';
 
 // MODULES //
 
@@ -14,7 +15,6 @@ var helpers = yeoman.test;
 // TESTS //
 
 describe( 'validate-io generator', function tests() {
-	'use strict';
 
 	// SETUP //
 
@@ -48,18 +48,22 @@ describe( 'validate-io generator', function tests() {
 
 	it( 'creates expected files', function test() {
 		var expected = [
-				'.gitignore',
-				'.npmignore',
-				'.travis.yml',
-				'README.md',
-				'TODO.md',
-				'Makefile',
-				'LICENSE',
-				'package.json',
-				'examples/index.js',
-				'test/test.js',
-				'lib/index.js'
-			];
+			'.gitignore',
+			'.gitattributes',
+			'.npmignore',
+			'.travis.yml',
+			'.editorconfig',
+			'.jshintignore',
+			'.jshintrc',
+			'README.md',
+			'TODO.md',
+			'Makefile',
+			'LICENSE',
+			'package.json',
+			'examples/index.js',
+			'test/test.js',
+			'lib/index.js'
+		];
 
 		helpers.assertFile( expected );
 	});

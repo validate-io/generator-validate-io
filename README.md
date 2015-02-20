@@ -96,6 +96,7 @@ Enter the module description.
 Once you have answered all prompts, you will have the following scaffold:
 
 ```
+benchmark/
 examples/
 	- index.js
 lib/
@@ -105,6 +106,9 @@ test/
 .gitignore
 .npmignore
 .travis.yml
+.jshintrc
+.jshintignore
+.editorconfig
 LICENSE
 Makefile
 package.json
@@ -152,6 +156,11 @@ The main library file `lib/index.js` includes a skeleton constructor. The file i
 The generator creates a skeleton test file. Aim for 100% test coverage.
 
 
+#### Benchmark
+
+The generator creates an empty directory for benchmarks. Should the module warrant benchmarks, include the benchmark files in this directory.
+
+
 #### Examples
 
 The `examples/index.js` file should be modified to showcase the module and should correspond to the example provided in the `README`.
@@ -189,7 +198,7 @@ By default, the generator generates a [Travis-CI](https://travis-ci.org/) `*.yml
 
 ### Unit
 
-Unit tests use the [Mocha](http://visionmedia.github.io/mocha) test framework with [Chai](http://chaijs.com) assertions. To run the tests, execute the following command in the top-level application directory:
+Unit tests use the [Mocha](http://mochajs.org) test framework with [Chai](http://chaijs.com) assertions. To run the tests, execute the following command in the top-level application directory:
 
 ``` bash
 $ make test
@@ -209,16 +218,16 @@ $ make test-cov
 Istanbul creates a `./reports/coverage` directory. To access an HTML version of the report,
 
 ``` bash
-$ open reports/coverage/lcov-report/index.html
+$ make view-cov
 ```
 
 
+---
 ## License
 
 [MIT license](http://opensource.org/licenses/MIT).
 
 
----
 ## Copyright
 
 Copyright &copy; 2014. Athan Reines.
