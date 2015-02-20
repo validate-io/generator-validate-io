@@ -104,6 +104,7 @@ lib/
 test/
 	- test.js
 .gitignore
+.gitattributes
 .npmignore
 .travis.yml
 .jshintrc
