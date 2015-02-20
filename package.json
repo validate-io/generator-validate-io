@@ -34,10 +34,10 @@
   },
   "dependencies": {
     "chalk": "^0.5.1",
-    "npm-name": "^1.0.1",
+    "npm-name": "^1.0.3",
     "shelljs": "^0.3.0",
-    "yeoman-generator": "^0.17.3",
-    "yosay": "^1.0.0"
+    "yeoman-generator": "^0.17.7",
+    "yosay": "^1.0.2"
   },
   "devDependencies": {
     "mocha": "1.x.x",
