@@ -33,15 +33,15 @@
     "url": "https://github.com/validate-io/generator-validate-io/issues"
   },
   "dependencies": {
-    "chalk": "^0.5.1",
+    "chalk": "^1.0.0",
     "npm-name": "^1.0.3",
     "shelljs": "^0.3.0",
     "yeoman-generator": "^0.18.9",
     "yosay": "^1.0.2"
   },
   "devDependencies": {
-    "mocha": "1.x.x",
-    "chai": "1.x.x",
+    "mocha": "2.x.x",
+    "chai": "2.x.x",
     "coveralls": "^2.11.1",
     "istanbul": "^0.3.0",
     "jshint": "2.x.x",
