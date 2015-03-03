@@ -1,9 +1,12 @@
 language: node_js
 node_js:
+  - '0.12'
+  - '0.11'
   - '0.10'
+  - 'iojs'
 before_install:
   - currentfolder=${PWD##*/}
-  - if [ "$currentfolder" != 'generator-validate-io' ]; then cd .. && eval "mv $currentfolder generator-validate-io" && cd generator-validate-io; fi
+  - if [ "$currentfolder" != 'generator-compute-io' ]; then cd .. && eval "mv $currentfolder generator-compute-io" && cd generator-compute-io; fi
 after_script:
   - npm run coveralls
 
