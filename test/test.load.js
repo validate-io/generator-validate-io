@@ -14,7 +14,8 @@ var expect = chai.expect,
 
 
 // TESTS //
-describe('validate-io generator', function tests() {
+
+describe( 'validate-io generator', function tests() {
 
 	it( 'can be imported' , function test() {
 		var app = require( '../app' );

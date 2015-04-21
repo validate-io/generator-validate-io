@@ -272,15 +272,7 @@ var Generator = yeoman.generators.Base.extend({
 	*	Creates a module boilerplate.
 	*/
 	lib: function() {
-		var context = {
-				'name': this.moduleName.split('-').slice(1).join('-'),
-				'author': this.author,
-				'email': this.email,
-				'description': this.description,
-				'year': this.year
-			};
-
-		this.template( 'lib/_index.js', 'lib/index.js', context );
+		this.copy( 'lib/_index.js', 'lib/index.js' );
 	}, // end METHOD lib()
 
 	/**
@@ -309,14 +301,14 @@ var Generator = yeoman.generators.Base.extend({
 	*/
 	install: function() {
 		var config = {
-				'bower': false,
-				'npm': true,
-				'skipInstall': this.options[ 'skip-install' ],
-				'skipMessage': false,
-				'callback': function onFinish() {
-					console.log( '\n...finished.\n' );
-				}
-			};
+			'bower': false,
+			'npm': true,
+			'skipInstall': this.options[ 'skip-install' ],
+			'skipMessage': false,
+			'callback': function onFinish() {
+				console.log( '\n...finished.\n' );
+			}
+		};
 
 		this.on( 'end', function onEnd() {
 			if ( this.git ) {
