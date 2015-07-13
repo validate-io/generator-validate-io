@@ -41,11 +41,11 @@
   },
   "devDependencies": {
     "mocha": "2.x.x",
-    "chai": "2.x.x",
+    "chai": "3.x.x",
     "coveralls": "^2.11.1",
     "istanbul": "^0.3.0",
     "jshint": "2.x.x",
-    "jshint-stylish": "^1.0.0"
+    "jshint-stylish": "2.x.x"
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
